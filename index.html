@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>welcome to tekgloballlc</title>
+    </head>
+    <body>
+        <h1>This is a great cloud professional training institution aimed at producing the best cloud Architect/DevOps Engineers!!!</h1>
+       <h2>Our mission is to train the very best cloud Architect</h2>
+        <div id="debug"></div>
+        <script>
+            // JSON - JavaScript Object Notation
+            fetch("https://tes123tekglobal.s3.us-east-2.amazonaws.com/sample-file.json")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data.sentence)
+                document.querySelector("#debug").innerText = data.sentence
+            })
+        </script>
+        <img src="https://s3.us-west-1.amazonaws.com/tekgloballlc.com/s3website/tekgloabal.jpg">
+        <img src="https://tes123tekglobal.s3.us-east-2.amazonaws.com/tekglobalteam.JPG">
+    </body>
+</html>
